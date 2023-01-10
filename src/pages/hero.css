@@ -1,0 +1,174 @@
+.hero{
+    background-color: #000613;
+    height: 120vh;
+
+}
+
+/*-------------Logo Hero Section-------------*/
+
+.logo-hero{
+    width: 100%;
+    padding: 200px 0 50px;
+    text-align: center;
+}
+.logo-hero img{
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+}
+
+
+/*-------------Countdown Hero Section-------------*/
+
+.countdown-wrapper {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    background: rgb(0 0 0 / 40%);
+    border-radius: 210px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(11px);
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 30px;
+    margin: 10px;
+    padding-top: 10px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.countdown-item span {
+color: #1f5364;
+font-size: 12px;
+font-weight: 600;
+text-transform: uppercase;
+font-family: 'Roboto Mono', monospace;
+}
+.countdown-svg {
+position: absolute;
+top: 0;
+left: 0;
+width: 100px;
+height: 100px;
+
+}
+
+/*-------------Buttons Hero Section-------------*/
+.register-btn-container {
+width: 100%;
+text-align: center;
+padding: 50px;
+display : flex;
+}
+
+.btn-hero {
+    font-family: 'Roboto Mono', monospace;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, #021e33 0%, #1f5364 50%, #0cbdf1 100%);
+    background-size: 500%;
+    border: none;
+    border-radius: 5rem !important;
+    box-shadow: 0 0rem 2rem rgb(5, 30, 45);
+    color: #fff;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 5rem;
+    letter-spacing: .05em;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 5rem;
+    width: 20rem;
+}
+
+.btn-hero:hover {
+    animation-name: gradient;
+    -webkit-animation-name: gradient;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards; }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%; }
+    100% {
+        background-position: 100%; } }
+
+@media all and (min-width: 1024px) and (max-width: 1366px) {
+    .btn-hero {
+        height: 2.8rem;
+        line-height: 2.8rem;
+        width: 15rem;
+        font-size: 1rem;
+    }
+    .hero{
+        height: 100vh;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+}
+
+@media all and (max-width: 480px) {
+    .hero{
+        height: 100vh;
+    }
+    .countdown-item {
+        font-size: 15px;
+        width: 60px;
+        height: 60px;
+        line-height: 15px
+    }
+    .countdown-svg {
+        width: 60px;
+        height: 60px;
+    }
+    .countdown-item span{
+        font-size: 9px;
+    }
+    .logo-hero img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .btn-hero {
+        height: 3rem;
+        line-height: 3rem;
+        width: 10rem;
+    }
+    .logo-hero {
+        padding: 180px 0 50px;
+    }
+
+}
