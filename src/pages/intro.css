@@ -1,11 +1,31 @@
 .introduction{
     position: relative;
     background-color: #000613;
-    height: 50vh;
+    /*height: 50vh;*/
+    padding: 100px 0 200px ;
 
 }
-/*-------------Fade Hero Section-------------*/
-
+/*-------------Fade Introduction-------------*/
+.line-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.glass{
+    position: absolute;
+    top: 0;
+    background: rgba(0, 6, 19, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
 .fade-section{
     position: absolute;
     height: 250px;
@@ -14,19 +34,35 @@
     /*background-color: #000613;*/
     background-image: linear-gradient(0, #000613 35%, rgba(0, 0, 0, 0));
 }
+.fade-section-2{
+    -webkit-box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.75);
+    position: absolute;
+    z-index: 11;
+    height: 250px;
+    width: 100%;
+    bottom: -250px;
+    /*background-color: #000613;*/
+    /*background-image: linear-gradient(180deg, #000613 35%, rgba(0, 0, 0, 0));*/
+}
 
 /*-------------Title Introduction-------------*/
 .title-intro{
+    position: relative;
+    z-index: 5;
     width: fit-content;
     font-family: 'Roboto Mono', monospace;
     color: #0cbdf1;
-    transform: rotate(-90deg) translateX(-230px) translateY(-150px);
+    transform: rotate(-90deg) translateX(-275px) translateY(-109px);
     font-size: 4rem;
     letter-spacing: -5px;
     font-weight: 900;
 }
 /*-------------Text Introduction-------------*/
 .text-intro{
+    z-index: 5;
+    position: relative;
     width: fit-content;
     font-family: 'Roboto Mono', monospace;
     color: white;
@@ -36,25 +72,21 @@
 }
 
 @media all and (min-width: 1024px) and (max-width: 1366px) {
-    .title-intro{
-        margin: auto;
-        transform: rotate(0) translateX(0) translateY(0);
-        font-size: 2rem;
-    }
+
     .text-intro{
-        width: 98%;
-        padding: 10px 20px;
-        font-size: 0.8rem;
+        width: 80%;
+        /*padding: 10px 20px;*/
+        /*font-size: 0.8rem;*/
     }
-    .introduction{
-        padding: 100px 0;
-        text-align: center;
-    }
-    .text-intro{
-        width: 98%;
-        padding: 10px 100px;
-        font-size: 1rem;
-    }
+    /*.introduction{*/
+    /*    padding: 100px 0;*/
+    /*    text-align: center;*/
+    /*}*/
+    /*.text-intro{*/
+    /*    width: 98%;*/
+    /*    padding: 10px 100px;*/
+    /*    font-size: 1rem;*/
+    /*}*/
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -62,6 +94,8 @@
         margin: auto;
         transform: rotate(0) translateX(0) translateY(0);
         font-size: 2rem;
+        letter-spacing:0;
+
     }
     .text-intro{
         width: 98%;
@@ -84,6 +118,7 @@
         margin: auto;
         transform: rotate(0) translateX(0) translateY(0);
         font-size: 2rem;
+        letter-spacing:0;
     }
     .text-intro{
         width: 98%;
@@ -104,15 +139,17 @@
 @media all and (max-width: 480px) {
     .introduction{
         text-align: center;
+        padding: 100px 0 50px ;
     }
     .title-intro{
         margin: auto;
         transform: rotate(0) translateX(0) translateY(0);
         font-size: 2rem;
+        letter-spacing:0;
     }
     .text-intro{
         width: 98%;
         padding: 0 20px;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 }

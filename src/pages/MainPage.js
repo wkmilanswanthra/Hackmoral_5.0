@@ -4,11 +4,13 @@ import './hero.css'
 import './intro.css'
 import Countdown from "./countdown"
 import hero_logo from '../assets/HackMoral4.0-Logo.png'
+import line from '../assets/lines.png'
 import {useCallback} from "react";
 import Particles from "react-tsparticles";
 import {loadFull} from "tsparticles";
 
 const MainPage = () => {
+
     const particlesInit = useCallback(async engine => {
         console.log(engine);
         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -22,8 +24,8 @@ const MainPage = () => {
     }, []);
 
 
-    return (
 
+    return (
         <>
             <div className="section hero">
                 <div className="logo-hero">
@@ -155,36 +157,53 @@ const MainPage = () => {
                     Hackmoral 5.0
                 </div>
                 <p className="text-intro">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloremque dolorum ex itaque
-                    suscipit! Animi blanditiis delectus esse eum, maiores natus nemo. Asperiores atque consectetur
-                    cupiditate facere laudantium nemo perferendis saepe temporibus? Aliquid, dolores, dolorum! Aliquid
-                    aperiam consectetur deleniti excepturi in ipsum nihil non obcaecati rem similique? Deserunt, quae,
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloremque dolorum ex
+                    itaque
+                    suscipit! Animi blanditiis delectus esse eum, maiores natus nemo. Asperiores atque
+                    consectetur
+                    cupiditate facere laudantium nemo perferendis saepe temporibus? Aliquid, dolores, dolorum!
+                    Aliquid
+                    aperiam consectetur deleniti excepturi in ipsum nihil non obcaecati rem similique? Deserunt,
+                    quae,
                     voluptatum?
                 </p>
                 <p className="text-intro">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloremque dolorum ex itaque
-                    suscipit! Animi blanditiis delectus esse eum, maiores natus nemo. Asperiores atque consectetur
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloremque dolorum ex
+                    itaque
+                    suscipit! Animi blanditiis delectus esse eum, maiores natus nemo. Asperiores atque
+                    consectetur
                     cupiditate
                 </p>
+                <div className="glass"></div>
+                <img src={line} alt="" className="line-img"/>
+                <div className="fade-section-2"></div>
             </div>
             <div className="howItWorksBackground">
                 <div className="howItWorks">
                     <div className="howItWorksTitle">
-                         HOW IT WORKS
+                        HOW IT WORKS
                     </div>
-                
-                     <p className="howItWorksContaint">
-                         Second-year undergraduates of the Faculty of IT, University of Moratuwa get the opportunity to get registered for Hack Moral 4.0 as individual competitors. Once you are done with that can participate with your approved HackerRank account. Further details will be received via the email address provided in the registration.
-                     </p>
-                     <div className="howItWorksContaint seconddiv" >
-                            The practice playground will take place from the 16th of February 2022 in which you can get a better idea of the way you may need to process for the upcoming competitive hours. Once the competition is announced you need to discover the solutions for enigmas presented to you.
-                     </div>
-                     <div className="howItWorksContaint thirddiv"> Find this great referal playlist for get an exact idea about Hackmoral Array. </div>
-                     <div className="youTube"> <a href="www.youtube.com" target="_blank">  <button className="youTube" >
-                             WATCH ON YOUTUBE
-                      </button></a></div>                
-                
-                
+
+                    <p className="howItWorksContaint">
+                        Second-year undergraduates of the Faculty of IT, University of Moratuwa get the
+                        opportunity to get registered for Hack Moral 4.0 as individual competitors. Once you are
+                        done with that can participate with your approved HackerRank account. Further details
+                        will be received via the email address provided in the registration.
+                    </p>
+                    <div className="howItWorksContaint seconddiv">
+                        The practice playground will take place from the 16th of February 2022 in which you can
+                        get a better idea of the way you may need to process for the upcoming competitive hours.
+                        Once the competition is announced you need to discover the solutions for enigmas
+                        presented to you.
+                    </div>
+                    <div className="howItWorksContaint thirddiv"> Find this great referal playlist for get an
+                        exact idea about Hackmoral Array.
+                    </div>
+                    <div className="youTube"><a href="www.youtube.com" target="_blank">
+                        <button className="btn-youtube">
+                            Watch how it works
+                        </button>
+                    </a></div>
                 </div>
             </div>
         </>

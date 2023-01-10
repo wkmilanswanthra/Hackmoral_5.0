@@ -1,6 +1,7 @@
 .hero{
     background-color: #000613;
-    height: 120vh;
+    /*height: 120vh;*/
+    padding: 250px 0 300px;
 
 }
 
@@ -8,7 +9,7 @@
 
 .logo-hero{
     width: 100%;
-    padding: 200px 0 50px;
+    padding: 0 0 50px;
     text-align: center;
 }
 .logo-hero img{
@@ -112,7 +113,8 @@ display : flex;
     animation-iteration-count: 1;
     -webkit-animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards; }
+    -webkit-animation-fill-mode: forwards;
+}
 
 @keyframes gradient {
     0% {
@@ -128,7 +130,11 @@ display : flex;
         font-size: 1rem;
     }
     .hero{
-        height: 100vh;
+        padding: 100px 0 200px;
+    }
+    .logo-hero img{
+        height: 200px;
+        width: 200px;
     }
 }
 
@@ -142,7 +148,7 @@ display : flex;
 
 @media all and (max-width: 480px) {
     .hero{
-        height: 100vh;
+        padding: 0 0 150px;
     }
     .countdown-item {
         font-size: 15px;
