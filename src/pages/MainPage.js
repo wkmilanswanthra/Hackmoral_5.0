@@ -9,6 +9,8 @@ import {useCallback} from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import TimeLine from "./TimeLine";
+import CardView from "./CardView";
+
 
 const MainPage = () => {
 
@@ -179,6 +181,7 @@ const MainPage = () => {
                 <img src={line} alt="" className="line-img"/>
                 <div className="fade-section-2"></div>
             </div>
+           
             <div className="howItWorksBackground ">
                 <div className="howItWorks">
                     <div className="howItWorksTitle">
@@ -207,7 +210,8 @@ const MainPage = () => {
                     </a></div>
                 </div>
             </div>
-            <TimeLine></TimeLine>
+            {/* <TimeLine></TimeLine> */}
+            <CardView/>
             
         </>
     );
