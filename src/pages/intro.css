@@ -1,0 +1,118 @@
+.introduction{
+    position: relative;
+    background-color: #000613;
+    height: 50vh;
+
+}
+/*-------------Fade Hero Section-------------*/
+
+.fade-section{
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    top: -249px;
+    /*background-color: #000613;*/
+    background-image: linear-gradient(0, #000613 35%, rgba(0, 0, 0, 0));
+}
+
+/*-------------Title Introduction-------------*/
+.title-intro{
+    width: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    color: #0cbdf1;
+    transform: rotate(-90deg) translateX(-230px) translateY(-150px);
+    font-size: 4rem;
+    letter-spacing: -5px;
+    font-weight: 900;
+}
+/*-------------Text Introduction-------------*/
+.text-intro{
+    width: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    width: 60%;
+    font-size: 1.2rem;
+    padding-left: 286px;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1366px) {
+    .title-intro{
+        margin: auto;
+        transform: rotate(0) translateX(0) translateY(0);
+        font-size: 2rem;
+    }
+    .text-intro{
+        width: 98%;
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+    .introduction{
+        padding: 100px 0;
+        text-align: center;
+    }
+    .text-intro{
+        width: 98%;
+        padding: 10px 100px;
+        font-size: 1rem;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .title-intro{
+        margin: auto;
+        transform: rotate(0) translateX(0) translateY(0);
+        font-size: 2rem;
+    }
+    .text-intro{
+        width: 98%;
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+    .introduction{
+        padding: 100px 0;
+        text-align: center;
+    }
+    .text-intro{
+        width: 98%;
+        padding: 10px 100px;
+        font-size: 1rem;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .title-intro{
+        margin: auto;
+        transform: rotate(0) translateX(0) translateY(0);
+        font-size: 2rem;
+    }
+    .text-intro{
+        width: 98%;
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+    .introduction{
+        padding: 100px 0;
+        text-align: center;
+    }
+    .text-intro{
+        width: 98%;
+        padding: 10px 100px;
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .introduction{
+        text-align: center;
+    }
+    .title-intro{
+        margin: auto;
+        transform: rotate(0) translateX(0) translateY(0);
+        font-size: 2rem;
+    }
+    .text-intro{
+        width: 98%;
+        padding: 0 20px;
+        font-size: 0.7rem;
+    }
+}
