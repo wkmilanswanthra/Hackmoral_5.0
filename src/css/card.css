@@ -1,4 +1,13 @@
+.cards{
+  position:relative;
+  padding: 200px 0;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+}
+
 .card-custom {
+  font-family: 'Roboto Mono', monospace;
   overflow: hidden;
   min-height: 390px;
   box-shadow: 0 0 30px rgba(154, 204, 16, 0.3);
@@ -9,7 +18,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-color: #000613;
+  border-color: #590202;
 }
 
 /* First border-left-width setting is a fallback */
