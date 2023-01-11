@@ -5,6 +5,8 @@ import Rules from "./sections/Rules";
 import Hero from "./sections/hero";
 import Introduction from "./sections/introduction";
 import Howitworks from "./sections/howitworks";
+import Footer from "./sections/Footer";
+import OrgButton from "./sections/OrgButton";
 
 
 const MainPage = () => {
@@ -18,6 +20,8 @@ const MainPage = () => {
             <CardView/>
             <TimeLine></TimeLine>
             <Rules/>
+            <OrgButton></OrgButton>
+            <Footer></Footer>
         </>
     );
 }
