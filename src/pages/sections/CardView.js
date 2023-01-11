@@ -1,11 +1,11 @@
-import "../css/card.css";
-import Card from "../components/Card";
-import problem from "../assets/problem.jpg";
-import fun from "../assets/fun.png";
-import coding from "../assets/coding.jpg";
-import prbcir from "../assets/problem.svg";
-import funcir from "../assets/fun.svg";
-import codingcir from "../assets/coding.svg";
+import "../../css/card.css";
+import Card from "../../components/Card";
+import problem from "../../assets/problem.jpg";
+import fun from "../../assets/fun.png";
+import coding from "../../assets/coding.jpg";
+import prbcir from "../../assets/problem.svg";
+import funcir from "../../assets/fun.svg";
+import codingcir from "../../assets/coding.svg";
 function App() {
   return (
     <div style={{"backgroundColor":"#000613"}}>

@@ -1,6 +1,6 @@
-import "../css/TimeLine.css"
-import TimeLineLeft from "../components/TimeLineLeft";
-import TimeLineRight from "../components/TimeLineRight";
+import "../../css/TimeLine.css"
+import TimeLineLeft from "../../components/TimeLineLeft";
+import TimeLineRight from "../../components/TimeLineRight";
 const TimeLine = () => {
     return (
         <div style={{"backgroundColor":"#000613"}}>
