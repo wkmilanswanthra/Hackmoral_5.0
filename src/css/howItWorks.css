@@ -6,13 +6,13 @@
 .howItWorksBackground {
     position: relative;
     z-index: 10;
-    background: linear-gradient(-45deg, #021e33, #133856, #031726, #0d2a3e);
+    background: linear-gradient(-45deg, #260101, #590202, #8c0303, #480202);
     background-size: 400% 400%;
     animation: gradient 14s linear infinite alternate-reverse;
     width: fit-content;
     align-items: center;
     justify-content: center;
-    padding: 300px 0 200px;
+    padding: 100px 0 180px;
 
 }
 
@@ -40,12 +40,13 @@
 }
 
 .howItWorksTitle {
+    text-shadow: 1px 1px 8px #00000052;
     padding-top: 45px;
     font-family: 'Roboto Mono', monospace;
     align-items: center;
     align-content: center;
     text-align: center;
-    color: #0cbdf1;
+    color: #F21B2D;
     font-size: 4rem;
     letter-spacing: -5px;
     font-weight: 900;
@@ -86,11 +87,11 @@
     position: relative;
     z-index: 10;
     -webkit-appearance: none;
-    background: linear-gradient(to right, #021e33 0%, #1f5364 50%, #0cbdf1 100%);
+    background: linear-gradient(to right, #590202 0%, #8C0303 50%, #F21B2D 100%);
     background-size: 500%;
     border: none;
     border-radius: 5rem !important;
-    box-shadow: 0 0rem 2rem rgb(5, 30, 45);
+    box-shadow: 0 0rem 20px rgb(38, 1, 1);
     color: #fff;
     cursor: pointer;
     -webkit-font-smoothing: antialiased;

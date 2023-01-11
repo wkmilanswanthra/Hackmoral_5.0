@@ -1,5 +1,5 @@
 .hero{
-    background-color: #000613;
+    background-color: #260101;
     /*height: 120vh;*/
     padding: 250px 0 300px;
 
@@ -55,7 +55,7 @@
 }
 
 .countdown-item span {
-color: #1f5364;
+color: #8C0303;
 font-size: 12px;
 font-weight: 600;
 text-transform: uppercase;
@@ -84,11 +84,11 @@ display : flex;
     position: relative;
     z-index: 10;
     -webkit-appearance: none;
-    background: linear-gradient(to right, #021e33 0%, #1f5364 50%, #0cbdf1 100%);
+    background: linear-gradient(to right, #590202 0%, #8C0303 50%, #F21B2D 100%);
     background-size: 500%;
     border: none;
     border-radius: 5rem !important;
-    box-shadow: 0 0rem 2rem rgb(5, 30, 45);
+    box-shadow: 0 0rem 2rem rgb(38, 1, 1);
     color: #fff;
     cursor: pointer;
     -webkit-font-smoothing: antialiased;

@@ -3,7 +3,7 @@ import TimeLineLeft from "../../components/TimeLineLeft";
 import TimeLineRight from "../../components/TimeLineRight";
 const TimeLine = () => {
     return (
-        <div style={{"backgroundColor":"#000613"}}>
+        <div style={{"backgroundColor":"#260101"}} className="timeline">
             <div className="container py-5">
                 <div className="main-timeline-4 text-white">
                     <TimeLineLeft

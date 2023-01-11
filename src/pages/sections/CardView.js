@@ -8,7 +8,7 @@ import funcir from "../../assets/fun.svg";
 import codingcir from "../../assets/coding.svg";
 function App() {
   return (
-    <div style={{"backgroundColor":"#000613"}}>
+    <div style={{"backgroundColor":"#260101FF"}} className="cards">
       <div className="container">
         <div className="row p-5">
           <div className="col-md-4 pb-3">

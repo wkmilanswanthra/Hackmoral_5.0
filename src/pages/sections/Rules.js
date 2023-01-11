@@ -1,10 +1,11 @@
+import '../../css/rules.css'
 const Rules = () => {
   return (
-    <div style={{ backgroundColor: "#000613" }} className="border-top border-bottom">
-      <div className="container p-5" style={{ backgroundColor: "#000613" }}>
+    <div  className="rules">
+      <div className="container ">
         <center>
-          <h6 className="text-white" style={{lineHeight:"2.2",textShadow:"#FC0 1px 0 10px"}}>RULES & REGULATIONS</h6>
-          <ul className="text-white" style={{fontSize: "17px",textAlign:"left",lineHeight:"2.2"}}>
+          <h6 className="title-rules" >RULES & REGULATIONS</h6>
+          <ul className="text-rules" >
             <li>Hack Moral 5.0 is exclusively for the second-year undergraduates of the Faculty of Information Technology.</li>
             <li>The competition will be driving for 5 hours from the commencement time. (6.00pm - 11.00pm).</li>
             <li>The entire competition is conducted on the HackerRank platform and it consists of questions that are ranked as Easy, Medium, and Hard.</li>
