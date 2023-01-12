@@ -7,6 +7,7 @@ import Introduction from "./sections/introduction";
 import Howitworks from "./sections/howitworks";
 import Footer from "./sections/Footer";
 import OrgButton from "./sections/OrgButton";
+import Awards from "./sections/awards";
 
 
 const MainPage = () => {
@@ -20,6 +21,7 @@ const MainPage = () => {
             <CardView/>
             <TimeLine></TimeLine>
             <Rules/>
+            <Awards/>
             <OrgButton></OrgButton>
             <Footer></Footer>
         </>

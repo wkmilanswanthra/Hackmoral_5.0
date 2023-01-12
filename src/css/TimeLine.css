@@ -97,9 +97,10 @@
 
     /* Make sure that all arrows are pointing leftwards */
     .timeline-4::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
+        left: 54px;
+        border-color: transparent rgb(255, 255, 255) transparent transparent;
+        border-width: 10px 10px 10px 0 ;
+
     }
 
     /* Make sure all circles are at the same spot */
