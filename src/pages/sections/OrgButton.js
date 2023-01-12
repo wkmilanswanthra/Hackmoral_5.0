@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const OrgButton = () => {
     return (
-        <div style={{ "backgroundColor": "#260101" }}>
+        <div style={{ "backgroundColor": "#1e0205", "position": "relative", "padding": "50px 0" }}>
             <center>
                 <Link to="/OrganizingCommitte" className=" mt-3 btn text-white" style={{ "backgroundColor": "#D90707" }}>Organizing Committe</Link>
             </center>
