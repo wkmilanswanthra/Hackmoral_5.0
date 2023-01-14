@@ -1,4 +1,5 @@
 .footer-container{
+    font-family: 'Roboto Mono', monospace;
     position: relative;
     background-color: #1e0205;
     backdrop-filter: blur(5px);
