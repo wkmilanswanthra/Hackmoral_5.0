@@ -17,6 +17,7 @@
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.7.1",
     "tsparticles": "^2.7.1",
+    "vanta": "^0.5.24",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

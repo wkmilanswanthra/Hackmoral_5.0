@@ -1,7 +1,7 @@
 .hero{
-    background-color: #260101;
+    background-color: #000000;
     /*height: 120vh;*/
-    padding: 250px 0 300px;
+    padding: 250px 0 200px;
 
 }
 
@@ -13,12 +13,12 @@
     text-align: center;
 }
 .logo-hero img{
+    margin: 50px 0 50px;
     position: relative;
     z-index: 10;
     margin: auto;
     text-align: center;
-    height: 300px;
-    width: 300px;
+    height: 130px;
 }
 
 
@@ -69,7 +69,12 @@ width: 100px;
 height: 100px;
 
 }
-
+.count-desc{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+}
 /*-------------Buttons Hero Section-------------*/
 .register-btn-container {
 width: 100%;
@@ -133,8 +138,7 @@ display : flex;
         padding: 100px 0 200px;
     }
     .logo-hero img{
-        height: 200px;
-        width: 200px;
+        height: 100px;
     }
 }
 
@@ -148,7 +152,7 @@ display : flex;
 
 @media all and (max-width: 480px) {
     .hero{
-        padding: 0 0 150px;
+        padding: 150px 0 230px;
     }
     .countdown-item {
         font-size: 15px;
@@ -164,8 +168,7 @@ display : flex;
         font-size: 9px;
     }
     .logo-hero img{
-        height: 200px;
-        width: 200px;
+        height: 60px;
     }
 
     .btn-hero {
@@ -174,7 +177,7 @@ display : flex;
         width: 10rem;
     }
     .logo-hero {
-        padding: 180px 0 50px;
+        padding: 100px 0 50px;
     }
 
 }

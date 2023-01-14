@@ -1,149 +1,75 @@
-import hero_logo from "../../assets/HackMoral4.0-Logo.png";
+import hero_logo from "../../assets/transparent logo.png";
 import Countdown from "../../components/countdown";
-import Particles from "react-tsparticles";
 import '../../css/hero.css';
-import { loadFull } from "tsparticles";
-import {useCallback} from "react";
+import {useCallback, useEffect, useState, useRef} from "react";
+import WAVES from 'vanta/dist/vanta.waves.min'
 
 
-const Hero = () =>{
-    const particlesInit = useCallback(async engine => {
-    console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine);
-}, []);
+const Hero = () => {
 
-    const particlesLoaded = useCallback(async container => {
-    await console.log(container);
-}, []);
+    const [screenSize, getDimension] = useState({
+        dynamicWidth: window.innerWidth,
+        dynamicHeight: window.innerHeight
+    });
+    const setDimension = () => {
+        getDimension({
+            dynamicWidth: window.innerWidth,
+            dynamicHeight: window.innerHeight
+        })
+    }
+    useEffect(() => {
+        window.addEventListener('resize', setDimension);
 
-    return(
+        return(() => {
+            window.removeEventListener('resize', setDimension);
+        })
+    }, [screenSize])
 
-        <div className="section hero">
+    const [vantaEffect, setVantaEffect] = useState(null)
+    const myRef = useRef(null)
+    useEffect(() => {
+        if (!vantaEffect) {
+            setVantaEffect(WAVES({
+                el: myRef.current,
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: true,
+                minHeight: window.innerHeight,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.5,
+                color: 0xb0b0b,
+            }))
+        }
+        return () => {
+            if (vantaEffect) vantaEffect.destroy()
+        }
+    }, [vantaEffect])
+
+    // VANTA.WAVES({
+    //     el: '#background', // element selector string or DOM object reference
+    //     color: 0x000000,
+    //     waveHeight: 20,
+    //     shininess: 50,
+    //     waveSpeed: 1.5,
+    //     zoom: 0.75
+    // })
+    return (
+
+        <div id="background" ref={myRef} className="section hero">
             <div className="logo-hero">
-                <img src={hero_logo} alt="" />
+                <img src={hero_logo} alt=""/>
             </div>
             <div className="countdown">
-                <Countdown timeTillDate="01 17 2023, 12:00 am" timeFormat="MM DD YYYY, h:mm a" />
+                <Countdown timeTillDate="01 17 2023, 12:00 am" timeFormat="MM DD YYYY, h:mm a"/>
+            </div>
+            <div className="count-desc">
+                until registration opens
             </div>
             <div className="register-btn-container">
                 <div className="btn-hero">Register</div>
                 {/*<div className="btn-hero">Leaderboard </div>*/}
             </div>
-            <Particles
-                id="tsparticles"
-                init={particlesInit}
-                loaded={particlesLoaded}
-                style={{ "display": "block" }}
-                options={{
-                    particles: {
-                        move: {
-                            directions: "none",
-                            enable: true,
-                            outModes: {
-                                default: "bounce",
-                            },
-                            random: false,
-                            speed: 1,
-                            straight: false,
-                        },
-                        number: {
-                            value: 100,
-                            density: {
-                                enable: true,
-                                value_area: 1000
-                            }
-                        },
-                        color: {
-                            value: ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
-                        },
-
-                        shape: {
-                            type: "circle",
-                            stroke: {
-                                width: 0,
-                                color: "#fff"
-                            },
-                            polygon: {
-                                nb_sides: 5
-                            },
-                            image: {
-                                src: "img/github.svg",
-                                width: 100,
-                                height: 100
-                            }
-                        },
-                        opacity: {
-                            value: 0.6,
-                            random: false,
-                            anim: {
-                                enable: false,
-                                speed: 1,
-                                opacity_min: 0.1,
-                                sync: false
-                            }
-                        },
-                        size: {
-                            value: 2,
-                            random: true,
-                            anim: {
-                                enable: false,
-                                speed: 40,
-                                size_min: 0.1,
-                                sync: false
-                            }
-                        },
-                        line_linked: {
-                            enable: true,
-                            distance: 120,
-                            color: "#ffffff",
-                            opacity: 0.4,
-                            width: 1
-                        },
-                    },
-                    interactivity: {
-                        detect_on: "canvas",
-                        events: {
-                            onhover: {
-                                enable: true,
-                                mode: "grab"
-                            },
-                            onclick: {
-                                enable: false
-                            },
-                            resize: true
-                        },
-                        modes: {
-                            grab: {
-                                distance: 250,
-                                line_linked: {
-                                    opacity: 0.5
-                                }
-                            },
-                            bubble: {
-                                distance: 400,
-                                size: 40,
-                                duration: 2,
-                                opacity: 8,
-                                speed: 3
-                            },
-                            repulse: {
-                                distance: 200,
-                                duration: 0.4
-                            },
-                            push: {
-                                particles_nb: 4
-                            },
-                            remove: {
-                                particles_nb: 2
-                            }
-                        }
-                    },
-                    retina_detect: true
-                }}
-            />
         </div>
     )
 }
