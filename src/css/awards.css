@@ -135,12 +135,12 @@
       linear-gradient(transparent, transparent, transparent, transparent, #0004);
   }
   .awards :nth-child(1) {
-    order: 3;
+    order: 2;
   }
   .awards :nth-child(2) {
     order: 1;
   }
   .awards :nth-child(3) {
-    order: 2;
+    order: 3;
   }
 }

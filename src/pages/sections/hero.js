@@ -38,7 +38,6 @@ const Hero = () => {
           scale: 1.0,
           scaleMobile: 1.5,
           color: 0xb0b0b,
-          color: 0x0,
           shininess: 24.0,
         })
       );
