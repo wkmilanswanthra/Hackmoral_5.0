@@ -1,0 +1,68 @@
+.btn-org {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  margin: auto;
+  position: relative;
+  z-index: 10;
+  -webkit-appearance: none;
+  background: linear-gradient(to right, #590202 0%, #8c0303 50%, #f21b2d 100%);
+  background-size: 500%;
+  border: none;
+  border-radius: 5rem !important;
+  box-shadow: 0 0rem 2rem rgb(38, 1, 1);
+  color: #fff;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 5rem;
+  letter-spacing: 0.05em;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 5rem;
+  width: 20rem;
+}
+
+.btn-org:hover {
+  color: white;
+  animation-name: gradient;
+  -webkit-animation-name: gradient;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1366px) {
+  .btn-org {
+    height: 2.8rem;
+    line-height: 2.8rem;
+    width: 18rem;
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .btn-org {
+    height: 3rem;
+    line-height: 3rem;
+    width: 15rem;
+  }
+}

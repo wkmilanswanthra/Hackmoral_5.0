@@ -1,183 +1,181 @@
-.hero{
-    background-color: #000000;
-    /*height: 120vh;*/
-    padding: 250px 0 200px;
-
+.hero {
+  background-color: #000000;
+  /*height: 120vh;*/
+  padding: 180px 0 200px;
 }
 
 /*-------------Logo Hero Section-------------*/
 
-.logo-hero{
-    width: 100%;
-    padding: 0 0 50px;
-    text-align: center;
+.logo-hero {
+  width: 100%;
+  padding: 0 0 50px;
+  text-align: center;
 }
-.logo-hero img{
-    margin: 50px 0 50px;
-    position: relative;
-    z-index: 10;
-    margin: auto;
-    text-align: center;
-    height: 130px;
+.logo-hero img {
+  margin: 50px 0 50px;
+  position: relative;
+  z-index: 10;
+  margin: auto;
+  text-align: center;
+  height: 130px;
 }
-
 
 /*-------------Countdown Hero Section-------------*/
 
 .countdown-wrapper {
-    position: relative;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .countdown-item {
-    background: rgb(0 0 0 / 40%);
-    border-radius: 210px;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(11px);
-    color: #fff;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    line-height: 30px;
-    margin: 10px;
-    padding-top: 10px;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    font-family: 'Roboto Mono', monospace;
-
+  background: rgb(0 0 0 / 40%);
+  border-radius: 210px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(11px);
+  color: #fff;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 30px;
+  margin: 10px;
+  padding-top: 10px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  font-family: "Roboto Mono", monospace;
 }
 
 .countdown-item span {
-color: #8C0303;
-font-size: 12px;
-font-weight: 600;
-text-transform: uppercase;
-font-family: 'Roboto Mono', monospace;
+  color: #8c0303;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Roboto Mono", monospace;
 }
 .countdown-svg {
-position: absolute;
-top: 0;
-left: 0;
-width: 100px;
-height: 100px;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
 }
-.count-desc{
-    color: white;
-    text-align: center;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1.2rem;
+.count-desc {
+  color: white;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2rem;
 }
 /*-------------Buttons Hero Section-------------*/
 .register-btn-container {
-width: 100%;
-text-align: center;
-padding: 50px;
-display : flex;
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  display: flex;
 }
 
 .btn-hero {
-    font-family: 'Roboto Mono', monospace;
-    margin: auto;
-    position: relative;
-    z-index: 10;
-    -webkit-appearance: none;
-    background: linear-gradient(to right, #590202 0%, #8C0303 50%, #F21B2D 100%);
-    background-size: 500%;
-    border: none;
-    border-radius: 5rem !important;
-    box-shadow: 0 0rem 2rem rgb(38, 1, 1);
-    color: #fff;
-    cursor: pointer;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    height: 5rem;
-    letter-spacing: .05em;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    line-height: 5rem;
-    width: 20rem;
+  font-family: "Roboto Mono", monospace;
+  margin: auto;
+  position: relative;
+  z-index: 10;
+  -webkit-appearance: none;
+  background: linear-gradient(to right, #590202 0%, #8c0303 50%, #f21b2d 100%);
+  background-size: 500%;
+  border: none;
+  border-radius: 5rem !important;
+  box-shadow: 0 0rem 2rem rgb(38, 1, 1);
+  color: #fff;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 5rem;
+  letter-spacing: 0.05em;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 5rem;
+  width: 20rem;
 }
 
 .btn-hero:hover {
-    animation-name: gradient;
-    -webkit-animation-name: gradient;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+  text-decoration: none;
+  color: white;
+  animation-name: gradient;
+  -webkit-animation-name: gradient;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%; }
-    100% {
-        background-position: 100%; } }
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
 
 @media all and (min-width: 1024px) and (max-width: 1366px) {
-    .btn-hero {
-        height: 2.8rem;
-        line-height: 2.8rem;
-        width: 15rem;
-        font-size: 1rem;
-    }
-    .hero{
-        padding: 100px 0 200px;
-    }
-    .logo-hero img{
-        height: 100px;
-    }
+  .btn-hero {
+    height: 2.8rem;
+    line-height: 2.8rem;
+    width: 15rem;
+    font-size: 1rem;
+  }
+  .hero {
+    padding: 100px 0 200px;
+  }
+  .logo-hero img {
+    height: 100px;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
-
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
-
 }
 
 @media all and (max-width: 480px) {
-    .hero{
-        padding: 150px 0 230px;
-    }
-    .countdown-item {
-        font-size: 15px;
-        width: 60px;
-        height: 60px;
-        line-height: 15px
-    }
-    .countdown-svg {
-        width: 60px;
-        height: 60px;
-    }
-    .countdown-item span{
-        font-size: 9px;
-    }
-    .logo-hero img{
-        height: 60px;
-    }
+  .hero {
+    padding: 150px 0 230px;
+  }
+  .countdown-item {
+    font-size: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 15px;
+  }
+  .countdown-svg {
+    width: 60px;
+    height: 60px;
+  }
+  .countdown-item span {
+    font-size: 9px;
+  }
+  .logo-hero img {
+    height: 60px;
+  }
 
-    .btn-hero {
-        height: 3rem;
-        line-height: 3rem;
-        width: 10rem;
-    }
-    .logo-hero {
-        padding: 100px 0 50px;
-    }
-
+  .btn-hero {
+    height: 3rem;
+    line-height: 3rem;
+    width: 10rem;
+  }
+  .logo-hero {
+    padding: 100px 0 50px;
+  }
 }

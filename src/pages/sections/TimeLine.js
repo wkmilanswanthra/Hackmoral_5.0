@@ -1,55 +1,58 @@
-import "../../css/TimeLine.css"
+import "../../css/TimeLine.css";
 import TimeLineLeft from "../../components/TimeLineLeft";
 import TimeLineRight from "../../components/TimeLineRight";
 const TimeLine = () => {
-    return (
-        <div style={{"backgroundColor":"#000000"}} className="timeline">
-            <div className="container py-5">
-                <div className="main-timeline-4 text-white">
-                    <TimeLineLeft
-                        heading="COMMENCEMENT OF REGISTRATION"
-                        date="12TH FEBRUARY 2022"
-                        buttonText="Google.com"
-                        link="https://www.google.com"
-                        description="Exclusive for second-year undergraduates of the Faculty of Information Technology, University of Moratuwa."
-                    />
-                    <TimeLineRight
-                        heading="AWARENESS SESSION"
-                        date="14TH FEBRUARY 2022"
-                        buttonText="Button Text"
-                        description="A brief discussion will be conducted to make the competitors aware of Hack Moral 4.0."
-                    />
-                    <TimeLineLeft
-                        heading="OPENING THE PLAYGROUND"
-                        date="16TH FEBRUARY 2022"
-                        buttonText="Button Text"
-                        description="This is a practice playground set for the competitors to sharpen their skills and computational thinking before the upcoming competitive hours."
-                    />
-                    <TimeLineRight
-                        heading="REGISTRATION CLOSES"
-                        date="17TH FEBRUARY 2022"
-                        buttonText="Button Text"
-                        description="Every competitor must be registered for the competition before the deadline."
-                    />
-                    <TimeLineLeft
-                        heading="THE GAME DAY"
-                        date="19TH FEBRUARY 2022"
-                        buttonText="Button Text"
-                        description="It's the day! Competitors can make their way to the winners' table by untangling the challenges given via HackerRank playground."
-                    />
-                    <TimeLineRight
-                        heading="ANNOUNCING THE WINNERS"
-                        date="20TH FEBRUARY 2022"
-                        buttonText="Button Text"
-                        description="This commences at the end of the event and winners will be announced."
-                    />
-                    <TimeLineLeft
-                        heading="DISTRIBUTING E-CERTIFICATES"
-                        date="22ND FEBRUARY 2022"
-                        buttonText="Button Text"
-                        description="Finally, certificates for the competitors will be distributed and the event will be concluded."
-                    />
-                    {/* <TimeLineLeft
+  return (
+    <div style={{ backgroundColor: "#000000" }} className="timeline">
+      <center>
+        <h6 className="title-timeline">TIMELINE</h6>
+      </center>
+
+      <div className="container py-5">
+        <div className="main-timeline-4 text-white">
+          <TimeLineLeft
+            heading="COMMENCEMENT OF REGISTRATION"
+            date="15TH JANUARY 2023"
+            buttonText="Register Now"
+            link="https://forms.gle/CgTR2Fq7DDq2ZfEH7"
+            description="Exclusive for second-year undergraduates of the Faculty of Information Technology, University of Moratuwa."
+          />
+          <TimeLineRight
+            heading="AWARENESS SESSION"
+            date="18TH JANUARY 2023"
+            buttonText="JOIN SESSION"
+            visibilityState="hidden"
+            description="A brief session on how HackMoral 5.0 and getting familiar with HackerRank platform."
+          />
+          <TimeLineLeft
+            heading="PRACTICE PLAYGROUND"
+            date="18TH JANUARY 2023"
+            buttonText="WARM UP"
+            description="A practice playground will be held as a warm up before HackMoral 5.0"
+            link="https://www.hackerrank.com/hackmoral-v5-0-practice-playground"
+          />
+          <TimeLineRight
+            heading="CLOSING OF REGISTRATION"
+            date="20TH JANUARY 2023"
+            description="All competitors must be registered before the deadline."
+            visibilityState="hidden"
+          />
+          <TimeLineLeft
+            heading="THE GAME DAY"
+            date="22ND JANUARY 2023"
+            buttonText="PLAY NOW"
+            description="All registered competitors will participate in the game for 4-hours"
+            link="https://www.hackerrank.com/hackmoral-v5-0"
+          />
+          <TimeLineRight
+            heading="ANNOUNCING THE WINNERS"
+            date="23RD JANUARY 2023"
+            buttonText="LEADERBOARD"
+            link="https://www.hackerrank.com/hackmoral-v5-0/leaderboard"
+            description="Champion, First Runner Up and Second Runner Up will be announced along with the merit awards for next 10 rankers."
+          />
+
+          {/* <TimeLineLeft
                     heading="COMMENCEMENT OF REGISTRATION"
                     date="May 28"
                     description="Contest Registration"
@@ -59,9 +62,9 @@ const TimeLine = () => {
                     date="May 28"
                     description="Contest Registration"
                 /> */}
-                </div>
-            </div>
         </div>
-    );
-}
+      </div>
+    </div>
+  );
+};
 export default TimeLine;

@@ -1,135 +1,146 @@
 .awards-container {
-    text-align: center;
-    display: grid;
-    place-items: center;
-    position: relative;
-    z-index: 5;
-    background-color: #1e0205;
-    padding: 100px 0;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 5;
+  background-color: black;
+  padding: 100px 0 150px 0;
 }
 
 .awards {
-    margin-top: 50px;
-    padding: 50px 0;
-    max-width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  padding: 50px 0;
+  max-width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .award-set {
 }
 
 .awards:hover img {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .awards img:hover {
-    transform: perspective(800px) rotateY(0deg);
-    opacity: 1;
+  transform: perspective(800px) rotateY(0deg);
+  opacity: 1;
 }
 
 .awards-img {
-    width: 80%;
-    height: 100%;
-    object-fit: cover;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, transparent, #0004);
-    transform-origin: center;
-    transform: perspective(800px) rotateY(25deg);
-    transition: 0.5s;
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, transparent, #0004);
+  transform-origin: center;
+  transform: perspective(800px) rotateY(25deg);
+  transition: 0.5s;
 }
 
 .award-name {
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 2rem;
-    padding-bottom: 30px;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  padding-bottom: 30px;
 }
 
 .title-awards {
-    position: relative;
-    z-index: 5;
-    width: fit-content;
-    font-family: 'Roboto Mono', monospace;
-    color: #F21B2D;
-    font-size: 4rem;
-    letter-spacing: -5px;
-    font-weight: 900;
+  position: relative;
+  z-index: 5;
+  width: fit-content;
+  font-family: "Roboto Mono", monospace;
+  color: #590202;
+  font-size: 4rem;
+  letter-spacing: -5px;
+  font-weight: 900;
 }
 
+.awards-merit {
+  padding: 45px;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
 .aw-3 {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
-@media all and  (max-width: 1366px) {
-    .title-awards {
-        margin: auto;
-        transform: rotate(0) translateX(0) translateY(0);
-        font-size: 1.6rem;
-        letter-spacing: 0;
-    }
+@media all and (max-width: 1366px) {
+  .title-awards {
+    margin: auto;
+    transform: rotate(0) translateX(0) translateY(0);
+    font-size: 1.6rem;
+    letter-spacing: 0;
+  }
 
-    .aw-3 {
-        margin-top: 0;
-    }
-    .award-set{
-        margin-top:20px;
-    }
-    .award-name {
-        font-size: 1.2rem;
-    }
-
+  .aw-3 {
+    margin-top: 0;
+  }
+  .award-set {
+    margin-top: 20px;
+  }
+  .award-name {
+    font-size: 1.2rem;
+  }
 }
-@media all and  (max-width: 768px) {
-    .title-awards {
-        margin: auto;
-        transform: rotate(0) translateX(0) translateY(0);
-        font-size: 1.6rem;
-        letter-spacing: 0;
-    }
-    .awards {
-        flex-direction: column;
-    }
-    .aw-3 {
-        margin-top: 0;
-    }
-    .award-set{
-        margin-top:90px;
-    }
-    .award-name {
-        font-size: 1.2rem;
-    }
-
+@media all and (max-width: 768px) {
+  .title-awards {
+    margin: auto;
+    transform: rotate(0) translateX(0) translateY(0);
+    font-size: 1.6rem;
+    letter-spacing: 0;
+  }
+  .awards {
+    flex-direction: column;
+  }
+  .aw-3 {
+    margin-top: 0;
+  }
+  .award-set {
+    margin-top: 90px;
+  }
+  .award-name {
+    font-size: 1.2rem;
+  }
 }
 @media all and (max-width: 480px) {
-    .awards-container{
-        padding:60px 0;
-    }
-    .title-awards {
-        margin: auto;
-        transform: rotate(0) translateX(0) translateY(0);
-        font-size: 2rem;
-        letter-spacing: 0;
-    }
-    .awards {
-        flex-direction: column;
-        margin-top: 0;
-    }
-    .aw-3 {
-        margin-top: 0;
-    }
-    .award-set{
-        margin-top:40px;
-    }
-    .award-name {
-        font-size: 1rem;
-    }
-    .awards-img{
-        -webkit-box-reflect: below 1px linear-gradient(transparent,transparent, transparent, transparent, #0004);
-
-    }
-    .awards :nth-child(1) { order: 3; }
-    .awards :nth-child(2) { order: 1; }
-    .awards :nth-child(3) { order: 2; }
+  .awards-container {
+    padding: 60px 0;
+  }
+  .title-awards {
+    margin: auto;
+    transform: rotate(0) translateX(0) translateY(0);
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+  .awards {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .aw-3 {
+    margin-top: 0;
+  }
+  .award-set {
+    margin-top: 40px;
+  }
+  .award-name {
+    font-size: 1rem;
+  }
+  .awards-img {
+    -webkit-box-reflect: below 1px
+      linear-gradient(transparent, transparent, transparent, transparent, #0004);
+  }
+  .awards :nth-child(1) {
+    order: 3;
+  }
+  .awards :nth-child(2) {
+    order: 1;
+  }
+  .awards :nth-child(3) {
+    order: 2;
+  }
 }
