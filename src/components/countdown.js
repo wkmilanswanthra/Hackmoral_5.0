@@ -13,16 +13,12 @@ export default class Countdown extends React.Component {
     this.interval = setInterval(() => {
       const { timeTillDate, timeFormat } = this.props;
       const then = moment(timeTillDate, timeFormat);
-      console.log(then)
       const now = moment();
-      console.log(now)
       const countdown = moment.duration(then.diff(now));
-      console.log(countdown)
       const days = countdown.days();
       const hours = countdown.hours();
       const minutes = countdown.minutes();
       const seconds = countdown.seconds();
-      console.log(days, hours, minutes, seconds)
 
       this.setState({ days, hours, minutes, seconds });
     }, 1000);
@@ -34,6 +30,7 @@ export default class Countdown extends React.Component {
     }
   }
 
+
   render() {
     const { days, hours, minutes, seconds } = this.state;
 
@@ -43,35 +40,68 @@ export default class Countdown extends React.Component {
     const minutesRadius = mapNumber(minutes, 60, 0, 0, 360);
     const secondsRadius = mapNumber(seconds, 60, 0, 0, 360);
 
-    if (!seconds) {
-      return null;
+    if (seconds<=0) {
+      return (
+          <div>
+              <div className="countdown-wrapper">
+                  {(
+                      <div className="countdown-item">
+                          <SVGCircle radius={360} />
+                          0
+                          <span>days</span>
+                      </div>
+                  )}
+                  { (
+                      <div className="countdown-item">
+                          <SVGCircle radius={360} />
+                          0
+                          <span>hours</span>
+                      </div>
+                  )}
+                  {(
+                      <div className="countdown-item">
+                          <SVGCircle radius={360} />
+                          0
+                          <span>minutes</span>
+                      </div>
+                  )}
+                  {(
+                      <div className="countdown-item">
+                          <SVGCircle radius={360} />
+                          0
+                          <span>seconds</span>
+                      </div>
+                  )}
+              </div>
+          </div>
+      );
     }
 
     return (
       <div>
         <div className="countdown-wrapper">
-          {days && (
+          {(
             <div className="countdown-item">
               <SVGCircle radius={daysRadius} />
               {days}
               <span>days</span>
             </div>
           )}
-          {hours && (
+          {(
             <div className="countdown-item">
               <SVGCircle radius={hoursRadius} />
               {hours}
               <span>hours</span>
             </div>
           )}
-          {minutes && (
+          {(
             <div className="countdown-item">
               <SVGCircle radius={minutesRadius} />
               {minutes}
               <span>minutes</span>
             </div>
           )}
-          {seconds && (
+          {(
             <div className="countdown-item">
               <SVGCircle radius={secondsRadius} />
               {seconds}
