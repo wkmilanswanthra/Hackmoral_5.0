@@ -13,12 +13,16 @@ export default class Countdown extends React.Component {
     this.interval = setInterval(() => {
       const { timeTillDate, timeFormat } = this.props;
       const then = moment(timeTillDate, timeFormat);
+      console.log(then)
       const now = moment();
-      const countdown = moment(then - now);
-      const days = countdown.format("D");
-      const hours = countdown.format("HH");
-      const minutes = countdown.format("mm");
-      const seconds = countdown.format("ss");
+      console.log(now)
+      const countdown = moment.duration(then.diff(now));
+      console.log(countdown)
+      const days = countdown.days();
+      const hours = countdown.hours();
+      const minutes = countdown.minutes();
+      const seconds = countdown.seconds();
+      console.log(days, hours, minutes, seconds)
 
       this.setState({ days, hours, minutes, seconds });
     }, 1000);
